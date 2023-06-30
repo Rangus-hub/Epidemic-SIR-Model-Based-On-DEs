@@ -21,6 +21,7 @@ class epi
     }
     void setdt()
     {
+        cout<<"\ndt is the time for the integration\n";
         float t;
         cout<<"\nENTER dt FOR INTEGRATION: ";
         cin>>t;
