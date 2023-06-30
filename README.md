@@ -1,9 +1,9 @@
 
 # Epidemic Models
 For an epidemic, there are many models that are used to study how virus spread. Models such as  
-SIS - Susceptible Infected Susceptible.  
-SIR - Susceptible Infected Recovered/Removed.  
-SIER - Susceptible Exposed Infected Recovered/Removed.  
+SIS - Susceptible Infected Susceptible.    
+SIR - Susceptible Infected Recovered/Removed.    
+SIER - Susceptible Exposed Infected Recovered/Removed.    
 
 Other methods such as Agent Based Models and Multi-Group Models are also implemented.  
 This project aims at implementing a simple SIR model.  
