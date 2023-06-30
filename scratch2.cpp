@@ -1,24 +1,5 @@
 /*
-S(t)
-are those susceptible but not yet infected with the disease;
-I(t)
-is the number of infectious individuals;
-R(t)
-are those individuals who have recovered from the disease and now have immunity to it.
-
-The SIR model describes the change in the population of each of these compartments 
-in terms of two parameters, β and γ. β describes the effective contact rate of 
-the disease: an infected individual comes into contact with βN other individuals 
-per unit time (of which the fraction that are susceptible to contracting the
-disease is S/N). γ is the mean recovery rate: that is, 1/γ is the mean period of
-time during which an infected individual can pass it on.
-
-SIR model differential equations:
-dS/dt = (- β SI)/N
-dI/dt = [(β S I)/ N]  - γI
-dR/dt = γI
-
-β=0.2, 1/γ=10days in a population of N=1000 (for example crowd in a mall).
+β=0.2, 1/γ = 10days in a population of N=1000 (for example crowd in a mall).
 The model can be started with a single infected individual on day 0: I(0)=1. 
 */
 #include <iostream>
@@ -69,6 +50,7 @@ void epi::internal_calc()
 {
     //OUTPUT IN EVERY STEP
     printf("suseptible: %f , infectious: %f , recovered: %f\n",s,i,r);
+    //cout<<"susceptible: "<<s<<" , infectious: "<<i<<" , recovered: "<<r<<"\n"; //for using cout.
 
     //CALCULATE NEW RATE AS PER SIR MODEL
     float newi,newr, news;
@@ -100,7 +82,7 @@ void calc()
 }
 int main()
 {
-    cout<<"\n********************************* S I R MODEL BASED ON D Es *********************************\n";
+    cout<<"\n********************************* S I R MODEL BASED ON Differential Equations *********************************\n";
     e.init();
     e.setdt();
     calc();
