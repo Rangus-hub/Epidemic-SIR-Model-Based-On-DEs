@@ -20,6 +20,9 @@ disease is S/N). γ is the mean recovery rate: that is, 1/γ is the mean period 
 time during which an infected individual can pass it on.
 
 SIR model differential equations:
+
 dS/dt = (- β SI)/N
+
 dI/dt = [(β S I)/ N]  - γI
+
 dR/dt = γI
